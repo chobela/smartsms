@@ -12,7 +12,7 @@ const Footer = () => {
             <ul className="nav nav-footer justify-content-center justify-content-lg-end">
              
               <li className="nav-item">
-                <Link href="https://app-express.net" className="nav-link" target="_blank">App Express</Link>
+                <Link href="https://app-express.net" className="nav-link" target="_blank">App Express Solutions</Link>
               </li>
             </ul>
           </div>
