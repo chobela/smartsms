@@ -10,7 +10,12 @@ class UserContext extends Component {
 
    
 
-   state = {};
+   state = {
+     contacts : '',
+     tasks : '',
+     success : '',
+     failed : ''
+   };
    
  
 

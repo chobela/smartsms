@@ -7,12 +7,10 @@ const Sidebar = (props) => {
 const removeSession = () => {
 
 sessionStorage.removeItem('token')
-window.location.replace("/smart");
+window.location.replace("/");
 
 
 }
-
-
 
     return ( 
           

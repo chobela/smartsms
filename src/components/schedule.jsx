@@ -2,7 +2,8 @@ import React, {useContext, useState, useEffect} from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import {xContext} from './UserContext';
-import { v4 as uuidv4 } from 'uuid';
+import { Select2 } from "select2-react-component";
+
 
 const Schedule = () => {
 
@@ -135,8 +136,8 @@ const Schedule = () => {
                     <div className="col">
                        <div className="form-group">
                             <label className="form-control-label" for="input-username">Contact</label>
-                        <select value={phone} onChange={(e)=>setPhone(e.target.value)} type="text" className="form-control">
-                            
+                        <select  value={phone} onChange={(e)=>setPhone(e.target.value)} type="text" className="form-control js-example-basic-single">
+                             <option value="">-- Select --</option>
                             <option value="000000">Send to All</option>
                               {mcontacts.map((t)=>{
                                  return  <option key={t.id} value={t.phone}>{t.reference + " : " + t.phone}</option>
@@ -214,7 +215,7 @@ const Schedule = () => {
                 </div>
           
 
-                <div className="form-footer"> <button type="submit" className="btn btn-primary float-right">Send</button></div>
+                <div className="form-footer"> <button type="submit" className="btn btn-primary float-right">Save</button></div>
              
            
               </form>

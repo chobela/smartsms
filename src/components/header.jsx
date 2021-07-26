@@ -1,5 +1,7 @@
 import React, {useContext, useState, useEffect} from 'react'
 import {xContext} from './UserContext';
+import { Spinner } from 'react-bootstrap';
+
 
 const Header = () => {
 
@@ -21,8 +23,15 @@ const Header = () => {
                 <div className="card-body">
                   <div className="row">
                     <div className="col">
+                      
                       <h5 className="card-title text-uppercase text-muted mb-0">Contacts</h5>
-                      <span className="h2 font-weight-bold mb-0">{user.contacts}</span>
+
+  <span className="h2 font-weight-bold mb-0">{user.contacts === '' ? <Spinner animation="border" variant="primary" role="status">
+  <span className="visually-hidden">Loading...</span>
+</Spinner> : user.contacts}</span>
+
+
+
                     </div>
                     <div className="col-auto">
                       <div className="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -45,7 +54,9 @@ const Header = () => {
                   <div className="row">
                     <div className="col">
                       <h5 className="card-title text-uppercase text-muted mb-0">Scheduled</h5>
-                      <span className="h2 font-weight-bold mb-0">{user.tasks}</span>
+                      <span className="h2 font-weight-bold mb-0">{user.tasks === '' ? <Spinner animation="border" variant="primary" role="status">
+  <span className="visually-hidden">Loading...</span>
+</Spinner> : user.tasks}</span>
                     </div>
                     <div className="col-auto">
                       <div className="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
@@ -67,7 +78,9 @@ const Header = () => {
                   <div className="row">
                     <div className="col">
                       <h5 className="card-title text-uppercase text-muted mb-0">Delivered</h5>
-                      <span className="h2 font-weight-bold mb-0">{user.success}</span>
+                      <span className="h2 font-weight-bold mb-0">{user.success === '' ? <Spinner animation="border" variant="primary" role="status">
+  <span className="visually-hidden">Loading...</span>
+</Spinner> : user.success}</span>
                     </div>
                     <div className="col-auto">
                       <div className="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -78,6 +91,7 @@ const Header = () => {
                   <p className="mt-3 mb-0 text-sm">
                     
                     <span className="text-nowrap">Total messages sent</span>
+
                   </p>
                 </div>
               </div>
@@ -89,7 +103,9 @@ const Header = () => {
                   <div className="row">
                     <div className="col">
                       <h5 className="card-title text-uppercase text-muted mb-0">Failed</h5>
-                      <span className="h2 font-weight-bold mb-0">{user.failed}</span>
+                      <span className="h2 font-weight-bold mb-0">{user.failed === '' ? <Spinner animation="border" variant="primary" role="status">
+  <span className="visually-hidden">Loading...</span>
+</Spinner> : user.failed}</span>
                     </div>
                     <div className="col-auto">
                       <div className="icon icon-shape bg-gradient-info text-white rounded-circle shadow">

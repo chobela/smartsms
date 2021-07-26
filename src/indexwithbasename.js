@@ -9,7 +9,7 @@ import UserContext from './components/UserContext'
 
 ReactDOM.render(
    <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={'/smart'}>
     <UserContext>
     <App/>
     </UserContext>
