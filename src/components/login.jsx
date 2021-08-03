@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
 
 async function loginUser(credentials) {
@@ -100,7 +101,7 @@ const Login = ({ setToken }) => {
              
             </div>
             <div className="col-6 text-right">
-              <a href="#" className="text-light"><small>Forgot password?</small></a>
+              <Link className="text-light"><small>Forgot password?</small></Link>
             </div>
           </div>
         </div>

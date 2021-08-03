@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useContext, useState} from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import {xContext} from './UserContext';
@@ -122,7 +122,7 @@ const Topup = () => {
                         <div className="col">
                       <div className="form-group">
                         <label className="form-control-label" for="input-username">Mobile Money Number</label>
-                        <input placeholder={phone} type="number" id="number" className="form-control" placeholder={phone} onChange={(e)=>setPhone(e.target.value)} autocomplete="off" value={phone} required></input>
+                        <input type="number" id="number" className="form-control" placeholder={phone} onChange={(e)=>setPhone(e.target.value)} autocomplete="off" value={phone} required></input>
                       </div>
                     </div>
                     

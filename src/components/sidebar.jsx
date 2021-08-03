@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 
 
@@ -18,7 +18,7 @@ window.location.replace("/");
     <div className="scrollbar-inner">
       
       <div className="sidenav-header  align-items-center">
-        <Link className="navbar-brand" href="javascript:void(0)">
+        <Link className="navbar-brand">
          <h1>Smart SMS</h1>
         </Link>
       </div>
@@ -57,7 +57,7 @@ window.location.replace("/");
                 <span className="nav-link-text">Report</span>
               </Link>
             </li>
-            <li className="nav-item">
+           <li className="nav-item">
               <Link to="/topup" className="nav-link" href="examples/tables.html">
                 <i className="ni ni-fat-add text-default"></i>
                 <span className="nav-link-text">Topup</span>

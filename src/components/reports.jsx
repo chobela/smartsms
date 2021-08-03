@@ -1,18 +1,11 @@
-import React, {useState, useEffect, useContext} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import Swal from 'sweetalert2'
-import {xContext} from './UserContext';
+
 
 const Reports = () => {
 
-const [selectedFile, setSelectedFile] = useState('');
 const [mreports, setReports] = useState([]);
-const ctx = useContext(xContext);
 
-    const myupdate = ()=>{
-           ctx.updateUser();
-     } 
 
       useEffect(()=>{
 
@@ -66,7 +59,7 @@ const ctx = useContext(xContext);
                         <td>{t.title}</td>
                         <td>{t.msg.substring(0,30) + "..."}</td>
                         <td>{
-                        t.status == '1701' ? <span class="badge badge-dot mr-4">
+                        t.status === '1701' ? <span class="badge badge-dot mr-4">
                         <i class="bg-success"></i>
                         <span class="status">Delivered</span>
                       </span> : <span class="badge badge-dot mr-4">

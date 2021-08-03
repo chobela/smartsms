@@ -1,6 +1,5 @@
-import React, { Component, createContext, useState } from 'react';
+import React, { Component, createContext } from 'react';
 import axios from 'axios'
-import useToken from './useToken';
 
 
 export const xContext = createContext();

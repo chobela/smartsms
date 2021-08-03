@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Switch, Redirect} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import Dashboard from './dashboard'
 import Contacts from './contacts'
 import Schedule from './schedule'

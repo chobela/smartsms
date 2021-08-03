@@ -12,7 +12,7 @@ const Dashboard = () => {
     const [phone, setPhone] = useState('260******');
     const [message, setMessage] = useState('');
      const [mmessage, setmMessage] = useState('');
-    const [maxlength, setMaxlength] = useState(160);
+    const [maxlength] = useState(160);
     const [newlength, setNewLength] = useState();
      const [mnewlength, setmNewLength] = useState();
      const ctx = useContext(xContext);

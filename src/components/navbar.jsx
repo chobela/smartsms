@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import {xContext} from './UserContext'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -37,9 +38,9 @@ const Navbar = () => {
               </div>
             </li>
             <li className="nav-item d-sm-none">
-              <a className="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+              <Link className="nav-link" data-action="search-show" data-target="#navbar-search-main">
                 <i className="ni ni-zoom-split-in"></i>
-              </a>
+              </Link>
             </li>
            
            <li className="nav-item">

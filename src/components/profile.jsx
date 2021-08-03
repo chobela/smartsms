@@ -1,8 +1,7 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useContext, useState} from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import {xContext} from './UserContext';
-import { v4 as uuidv4 } from 'uuid';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import IconButton from '@material-ui/core/IconButton';

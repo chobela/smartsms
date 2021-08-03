@@ -2,7 +2,6 @@ import React, {useContext, useState, useEffect} from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import {xContext} from './UserContext';
-import { Select2 } from "select2-react-component";
 
 
 const Schedule = () => {
@@ -14,7 +13,7 @@ const Schedule = () => {
     const [hour, setHour] = useState('');
     const [mcontacts, setContacts] = useState([]);
     const [message, setMessage] = useState('');
-    const [maxlength, setMaxlength] = useState(160);
+    const [maxlength] = useState(160);
     const [newlength, setNewLength] = useState();
     const ctx = useContext(xContext);
 
