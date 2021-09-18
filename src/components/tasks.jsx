@@ -84,7 +84,7 @@ const [mtasks, setTasks] = useState([]);
                         <td>{t.title}</td>
                         <td>{t.month + 1}</td>
                         <td>{t.day}</td>
-                        <td>{t.hour}</td>
+                        <td>{t.hour + 2}</td>
                         <td>{t.phone === '000000' ? 'All' : 'Single'}</td>
                         <td><button onClick={()=>handleDelete(t._id)} type="button" className="btn btn-sm btn-outline-warning">Remove</button></td>
                       
