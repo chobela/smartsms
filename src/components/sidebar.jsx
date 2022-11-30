@@ -57,12 +57,7 @@ window.location.replace("/");
                 <span className="nav-link-text">Report</span>
               </Link>
             </li>
-           <li className="nav-item">
-              <Link to="/topup" className="nav-link" href="examples/tables.html">
-                <i className="ni ni-fat-add text-default"></i>
-                <span className="nav-link-text">Topup</span>
-              </Link>
-            </li>
+     
               <li className="nav-item">
               <Link to="/profile" className="nav-link" href="examples/tables.html">
                 <i className="ni ni-lock-circle-open text-default"></i>
